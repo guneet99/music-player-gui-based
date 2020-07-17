@@ -8,6 +8,7 @@ pygame.init()
 
 class FrameApp(Frame):
     def __init__(self,master):
+
         super(FrameApp, self).__init__(master)
 
         self.grid()
@@ -49,6 +50,7 @@ class FrameApp(Frame):
         for song_dir in directory:
             print(song_dir)
             self.playlist.append(song_dir)
+            
         self.output.delete(0.0, END)
 
         for key, item in enumerate(self.playlist):
