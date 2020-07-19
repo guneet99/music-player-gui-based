@@ -16,20 +16,20 @@ class FrameApp(Frame):
         self.playlist = list()
         self.actual_song = 0
 
-        self.b1 = Button(self, text="play", command=self.play_music, width=20)
+        self.b1 = Button(self, text="play song", command=self.play_music, width=20)
         self.b1.grid(row=1, column=0)
 
-        self.b2 = Button(self, text="previous", command=self.previous_song,
+        self.b2 = Button(self, text="previous song", command=self.previous_song,
                          width=20)
         self.b2.grid(row=2, column=0)
 
-        self.b3 = Button(self, text="toggle", command=self.toggle, width=20)
+        self.b3 = Button(self, text="pause song", command=self.toggle, width=20)
         self.b3.grid(row=3, column=0)
 
-        self.b4 = Button(self, text="next", command=self.next_song, width=20)
+        self.b4 = Button(self, text="next song", command=self.next_song, width=20)
         self.b4.grid(row=4, column=0)
 
-        self.b5 = Button(self, text="add to list", command=self.add_to_list,
+        self.b5 = Button(self, text="add songs to list", command=self.add_to_list,
                          width=20)
         self.b5.grid(row=5, column=0)
 
